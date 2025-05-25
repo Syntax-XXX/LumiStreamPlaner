@@ -24,7 +24,7 @@ und die webhook konfiguration
    ```
 2. **Installiere Abhängigkeiten:**
    ```bash
-   cd Stream-Time-Webhook-Poster
+   cd LumiStreamPlaner
    npm install
    ```
 3. **Starte die Anwendung:**
