@@ -20,7 +20,7 @@ und die webhook konfiguration
 
 1. **Klone das Repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Syntax-XXX/LumiStreamPlaner.git
    ```
 2. **Installiere Abhängigkeiten:**
    ```bash
