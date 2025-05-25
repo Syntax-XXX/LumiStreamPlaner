@@ -1,0 +1,42 @@
+{
+  "name": "stream-planner",
+  "version": "2.0.0",
+  "description": "Lumi Streamplaner - Discord Webhook Schedule Dashboard",
+  "main": "main.cjs",
+  "author": "SyntaxXXX",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "electron-packager . LumiStreamPlaner --platform=win32 --arch=x64 --out=dist --icon=./logo.ico --overwrite"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "electron": "^36.3.0",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.syntaxxxx.streamplaner",
+    "productName": "Lumi Streamplaner",
+    "files": [
+      "**/*"
+    ],
+    "extraFiles": [
+      "schedule.json",
+      "webhook_message.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "./logo.ico"
+    }
+  }
+}
